@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-purple-500;
+  }
+  
+  .bg-grid {
+    background-size: 50px 50px;
+    background-image: 
+      linear-gradient(to right, theme(colors.primary.500/10) 1px, transparent 1px),
+      linear-gradient(to bottom, theme(colors.primary.500/10) 1px, transparent 1px);
+  }
+
+  .dark .bg-grid {
+    background-image: 
+      linear-gradient(to right, theme(colors.primary.400/20) 1px, transparent 1px),
+      linear-gradient(to bottom, theme(colors.primary.400/20) 1px, transparent 1px);
+  }
+
+  .glow {
+    box-shadow: 0 0 20px theme(colors.primary.500/20);
+  }
+
+  .dark .glow {
+    box-shadow: 0 0 30px theme(colors.primary.400/30);
+  }
+
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  .typing-cursor::after {
+    content: '|';
+    animation: cursor 1s infinite step-end;
+  }
+
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px theme(colors.primary.500/30);
+  }
+
+  .dark .card-hover:hover {
+    box-shadow: 0 10px 30px theme(colors.primary.400/40);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+
+  .animate-float-delayed-more {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: 4s;
+  }
+}
+
+@keyframes cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(1deg);
+  }
+  75% {
+    transform: translateY(5px) rotate(-1deg);
+  }
+}
