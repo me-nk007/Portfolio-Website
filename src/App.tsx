@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 function App() {
   const [isVisible, setIsVisible] = useState(false);
   const [typedText, setTypedText] = useState('');
-  const fullText = "Full Stack Developer & UI/UX Designer";
+  const fullText = "Cloud Engineer |  Developer | Digital Marketer | Freelancer";
 
   useEffect(() => {
     setIsVisible(true);
@@ -31,49 +31,58 @@ function App() {
     <ThemeProvider>
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
         <ThemeToggle />
-        
+
         {/* Animated Background Elements */}
         <div className="fixed inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 left-20 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl animate-float" />
           <div className="absolute bottom-20 right-20 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl animate-float-delayed" />
           <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-float-delayed-more" />
         </div>
-        
+
         {/* Hero Section */}
         <section className="h-screen flex items-center justify-center relative overflow-hidden bg-grid">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary-500/5 to-transparent animate-pulse" />
           <div className="absolute inset-0">
             <div className="absolute inset-0 bg-gradient-to-r from-primary-500/20 to-purple-500/20 backdrop-blur-3xl" />
           </div>
-          
-          <div className={`text-center relative z-10 px-4 transition-all duration-1000 transform ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-          }`}>
+
+          <div className={`text-center relative z-10 px-4 transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+            }`}>
             <div className="mb-8 relative">
-              <div className="w-32 h-32 mx-auto mb-6 rounded-full glow bg-gradient-to-r from-primary-500 to-purple-500 p-1 floating">
+              {/* <div className="w-32 h-32 mx-auto mb-0 px-0.5 py-1 rounded-full glow bg-gradient-to-r from-primary-500 to-purple-500  floating">
                 <img
-                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80"
+                  src="https://i.ibb.co/b53GzTzV/Fiver-DP.png"
                   alt="Profile"
-                  className="w-full h-full rounded-full object-cover"
+                  className="w-full h-full rounded-full object-contain object-center"
+                />
+              </div> */}
+              <div className="w-32 h-32 mx-auto mb-0 rounded-full glow overflow-hidden bg-gradient-to-r from-primary-500 to-purple-500 floating relative">
+                <img
+                  src="https://i.ibb.co/b53GzTzV/Fiver-DP.png"
+                  alt="Profile"
+                  className="absolute w-full h-full top-0.5 bottom-5 left-1 scale-125 object-cover"
                 />
               </div>
+
+
+
               <div className="absolute -top-4 -right-4 text-primary-500 animate-spin-slow">
                 <Sparkles className="w-8 h-8" />
               </div>
               <h1 className="text-6xl md:text-8xl font-bold mb-4 text-gradient animate-gradient">
-                John Doe
+                Nishant Kumar Karn
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 typing-cursor">
                 {typedText}
               </p>
               <div className="flex justify-center gap-6">
-                <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-300 transform hover:scale-125">
+                <a href="https://github.com/me-nk007" className="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-300 transform hover:scale-125">
                   <Github className="w-6 h-6" />
                 </a>
-                <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-300 transform hover:scale-125">
+                <a href="https://www.linkedin.com/in/nishant-kumar-karn-0a7022203/" className="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-300 transform hover:scale-125">
                   <Linkedin className="w-6 h-6" />
                 </a>
-                <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-300 transform hover:scale-125">
+                <a href="mailto:nishantkarn007@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-all duration-300 transform hover:scale-125">
                   <Mail className="w-6 h-6" />
                 </a>
               </div>
