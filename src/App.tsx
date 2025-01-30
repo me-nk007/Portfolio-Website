@@ -1,4 +1,4 @@
-import { Code, Layout, Server, Smartphone, Github, Linkedin, Mail, Sparkles } from 'lucide-react';
+import { Code, Layout, Server, Smartphone, Github, Linkedin, Mail, Sparkles, Cloud, Lollipop, Search, LucideAlignHorizontalSpaceAround, LucideBadge, LucideBarChart, LucideGanttChart, LucideChrome, LucideWebhook } from 'lucide-react';
 import { Section } from './components/Section';
 import { SkillCard } from './components/SkillCard';
 import { ThemeToggle } from './components/ThemeToggle';
@@ -60,7 +60,7 @@ function App() {
                 <img
                   src="https://i.ibb.co/b53GzTzV/Fiver-DP.png"
                   alt="Profile"
-                  className="absolute w-full h-full top-0.5 bottom-5 left-1 scale-125 object-cover"
+                  className="absolute w-full h-full top-0.5 bottom-3 left-1 scale-125 object-cover"
                 />
               </div>
 
@@ -95,47 +95,90 @@ function App() {
           <div className="absolute inset-0 bg-grid opacity-50" />
           <div className="relative z-10 max-w-3xl mx-auto">
             <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-2xl p-8 glow card-hover">
-              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm a passionate developer with 5+ years of experience in creating beautiful and functional web applications.
-                I specialize in React, Node.js, and modern web technologies. My approach combines technical expertise with
-                creative problem-solving to build exceptional digital experiences.
+              <p className="text-lg text-gray-600 dark:text-gray-300 text-justify mx-auto leading-relaxed">
+                I'm a Cloud Engineer by day, Developer by night, and Digital Marketer on weekends. With 5+ years of turning coffee into code, I specialize in building scalable cloud solutions, sleek web apps, and crafting digital strategies. Whether it’s React, Node.js, or optimizing the cloud, I solve problems creatively and deliver results that speak for themselves. Oh, and did I mention I freelance for fun?
               </p>
             </div>
           </div>
         </Section>
 
         {/* Skills Section */}
-        <Section title="Skills" className="relative overflow-hidden">
+        {/* <Section title="Skills" className="relative overflow-hidden">
           <div className="absolute inset-0 bg-grid opacity-50" />
           <div className="relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <SkillCard
-                icon={<Code className="w-8 h-8" />}
-                title="Frontend Development"
-                description="React, Vue.js, TypeScript, Tailwind CSS"
-                technologies={['React', 'Vue.js', 'TypeScript', 'Tailwind']}
-              />
-              <SkillCard
-                icon={<Server className="w-8 h-8" />}
-                title="Backend Development"
-                description="Node.js, Python, PostgreSQL, MongoDB"
-                technologies={['Node.js', 'Python', 'PostgreSQL', 'MongoDB']}
+                icon={<Cloud className="w-8 h-8" />}
+                title="Cloud Solutions"
+                description="AWS, Docker, Jenkins, CI/CD"
+                technologies={['AWS', 'Docker', 'Jenkins', 'CI/CD']}
               />
               <SkillCard
                 icon={<Layout className="w-8 h-8" />}
-                title="UI/UX Design"
-                description="Figma, Adobe XD, User Research"
-                technologies={['Figma', 'Adobe XD', 'Sketch', 'Principle']}
+                title="Full Stack Development"
+                description="React.js, Node.js, MongoDB, Vite.js.js"
+                technologies={['Node.js', 'Figma', 'Tailwind', 'MongoDB']}
               />
               <SkillCard
-                icon={<Smartphone className="w-8 h-8" />}
-                title="Mobile Development"
-                description="React Native, Flutter"
-                technologies={['React Native', 'Flutter', 'iOS', 'Android']}
+                icon={<LucideChrome className="w-8 h-8" />}
+                title="Digital Marketing"
+                description="SEO, SEM, PPC, Social Media"
+                technologies={['Google Ads', 'Meta Ads', 'Canva', 'ChatGpt']}
+              />
+              <SkillCard
+                icon={<LucideWebhook className="w-8 h-8" />}
+                title="Wordpress Development"
+                description="Themes, Plugins, Customization"
+                technologies={['Analytics', 'Console', 'Wordpress', 'Plugins']}
+              />
+            </div>
+          </div>
+        </Section> */}
+
+
+
+
+        <Section title="My Skills" className="relative overflow-hidden">
+          <div className="absolute inset-0 bg-grid opacity-50" />
+          <div className="relative z-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-y-14">
+              <SkillCard
+                icon={<Cloud className="w-8 h-8" />}
+                title="Cloud Solutions"
+                description="AWS, Docker, Jenkins, CI/CD"
+                technologies={['AWS', 'Docker', 'Jenkins', 'CI/CD']}
+              />
+              <SkillCard
+                icon={<Layout className="w-8 h-8" />}
+                title="Full Stack Development"
+                description="React.js, Node.js, MongoDB, Vite.js"
+                technologies={['Node.js', 'Figma', 'Tailwind', 'MongoDB']}
+              />
+              <SkillCard
+                icon={<LucideChrome className="w-8 h-8" />}
+                title="Digital Marketing"
+                description="SEO, SEM, PPC, Social Media"
+                technologies={['Google', 'Meta', 'Canva', 'ChatGpt']}
+              />
+              <SkillCard
+                icon={<LucideWebhook className="w-8 h-8" />}
+                title="WordPress Development"
+                description="Themes, Plugins, Customization"
+                technologies={['Analytics', 'Console', 'WordPress', 'Plugins']}
               />
             </div>
           </div>
         </Section>
+        {/* This is Nishant */}
+
+
+
+
+
+
+
+
+
 
         {/* Contact Section */}
         <Section title="Get in Touch" className="relative overflow-hidden">
@@ -180,7 +223,7 @@ function App() {
         <footer className="relative overflow-hidden bg-gray-900 text-gray-400 py-12">
           <div className="absolute inset-0 bg-grid opacity-10" />
           <div className="container mx-auto px-4 text-center relative z-10">
-            <p className="text-gradient font-medium">© 2024 John Doe. All rights reserved.</p>
+            <p className="text-gradient font-medium">© 2025 Nishant Kumar Karn. All rights reserved.</p>
           </div>
         </footer>
       </div>
