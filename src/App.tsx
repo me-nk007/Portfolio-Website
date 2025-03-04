@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 function App() {
   const [isVisible, setIsVisible] = useState(false);
   const [typedText, setTypedText] = useState('');
-  const fullText = "Cloud Engineer |  Developer | Digital Marketer | Freelancer";
+  const fullText = "Cloud Solutions Architect |  Developer | Digital Marketer | Freelancer";
 
   useEffect(() => {
     setIsVisible(true);
@@ -96,7 +96,7 @@ function App() {
           <div className="relative z-10 max-w-3xl mx-auto">
             <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-2xl p-8 glow card-hover">
               <p className="text-lg text-gray-600 dark:text-gray-300 text-justify mx-auto leading-relaxed">
-                I'm a Cloud Engineer by day, Developer by night, and Digital Marketer on weekends. With 5+ years of turning coffee into code, I specialize in building scalable cloud solutions, sleek web apps, and crafting digital strategies. Whether it’s React, Node.js, or optimizing the cloud, I solve problems creatively and deliver results that speak for themselves. Oh, and did I mention I freelance for fun?
+                I'm a Cloud Solutions Architect by day, Developer by night, and Digital Marketer on weekends. With 5+ years of turning coffee into code, I specialize in building scalable cloud solutions, sleek web apps, and crafting digital strategies. Whether it’s React, Node.js, or optimizing the cloud, I solve problems creatively and deliver results that speak for themselves. Oh, and did I mention I freelance for fun?
               </p>
             </div>
           </div>
@@ -146,7 +146,7 @@ function App() {
                 icon={<Cloud className="w-8 h-8" />}
                 title="Cloud Solutions"
                 description="AWS, Docker, Jenkins, CI/CD"
-                technologies={['AWS', 'Docker', 'Jenkins', 'CI/CD']}
+                technologies={['AWS', 'Docker', 'CI/CD']}
               />
               <SkillCard
                 icon={<Layout className="w-8 h-8" />}
